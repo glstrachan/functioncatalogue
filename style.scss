@@ -8,6 +8,46 @@
 
 html, body {margin: 0; height: 100%; overflow: hidden}
 
+.middle
+{
+  z-index: 1;
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card
+{
+  width: 50%;
+  height: 250px;
+  margin: 5%;
+  position: relative;
+}
+
+.black
+{
+  background-color: #1C1C1C;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+}
+
+.info
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30%;
+  padding: 10px 10px;
+  width: 100%;
+  color: snow;
+  font-size: 22px;
+  text-align: center;
+}
+
 nav
 {
   display: flex;
@@ -16,7 +56,7 @@ nav
   min-height: 8vh;
   background-color: #1C1C1C;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   opacity: 0.9;
 }
 
@@ -64,8 +104,20 @@ nav
   margin: 5px;
 }
 
-@media screen and (max-width:700px)
+@media screen and (max-width:1000px)
 {
+  .card
+  {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width:800px)
+{
+  .middle
+  {
+    width: 100%;
+  }
   body
   {
     overflow-x: hidden;
