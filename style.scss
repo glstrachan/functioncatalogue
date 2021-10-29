@@ -111,6 +111,10 @@ nav
 
 @media screen and (max-width:800px)
 {
+  html, body
+  {
+    overflow-y: visible;
+  }
   .middle
   {
     width: 100%;
