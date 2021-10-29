@@ -31,6 +31,7 @@ body::-webkit-scrollbar {
   align-items: flex-start;
   column-gap: 30px;
   row-gap: 30px;
+  margin-top: 11vh;
 }
 
 .card
@@ -76,6 +77,9 @@ nav
   z-index: 2;
   opacity: 0.9;
   margin-bottom: 3%;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .logo
