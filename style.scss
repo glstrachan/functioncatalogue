@@ -1,0 +1,173 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+nav
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #1C1C1C;
+  position: relative;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.logo
+{
+  color:snow;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.nav-links
+{
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+
+}
+
+.nav-links li
+{
+  list-style: none;
+  padding-left: 10px;
+}
+
+.nav-links a
+{
+  color: snow;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.burger
+{
+  display: none;
+  cursor: pointer;
+}
+
+.burger div
+{
+  width: 22px;
+  height: 3px;
+  background-color: snow;
+  margin: 5px;
+}
+
+@media screen and (max-width:700px)
+{
+  body
+  {
+    overflow-x: hidden;
+  }
+  .nav-links
+  {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+    padding-bottom: 50%;
+    padding-top: 5%;
+    opacity: 0;
+  }
+  .nav-links li
+  {
+    opacity: 1;
+  }
+  .burger
+  {
+    display: block;
+  }
+}
+
+.nav-active
+{
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+@mixin dots($count) {
+    $text-shadow: ();
+    @for $i from 0 through $count {
+      $text-shadow: $text-shadow,
+                   (-.5+(random()) * 3) + em
+                   (-.5+(random()) * 3) + em
+                   7px
+                   hsla(random() * 360, 100%, 50%,.9);
+    }
+    text-shadow: $text-shadow;
+  }
+  
+  html {
+    background: #1e1f22;
+  }
+  
+  body, head {
+    display: block;
+    font-size: 52px;
+    color: transparent;
+  }
+  
+  head::before, head::after,
+  body::before, body::after {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 3em;
+    height: 3em;
+    content: '.';
+    mix-blend-mode: screen;
+    animation: 44s -27s move infinite ease-in-out alternate;
+  }
+  
+  
+  body::before {
+    @include dots(40);
+    animation-duration: 44s;
+    animation-delay: -27s;
+  }
+  
+  body::after {
+    @include dots(40);
+    animation-duration: 43s;
+    animation-delay: -32s;
+  }
+  
+  head::before {
+    @include dots(40);
+    animation-duration: 42s;
+    animation-delay: -23s;
+  }
+  
+  head::after {
+    @include dots(40);
+    animation-duration: 41s;
+    animation-delay: -19s;
+  }
+  
+  @keyframes move {
+    from {
+      transform: rotate(0deg) scale(12) translateX(-20px);
+    }
+    to {
+      transform: rotate(360deg) scale(18) translateX(20px);
+    }
+  }
+
+  
+  
+  
