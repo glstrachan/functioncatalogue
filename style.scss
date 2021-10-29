@@ -6,6 +6,8 @@
   font-family: 'Red Hat Display', sans-serif;
 }
 
+html, body {margin: 0; height: 100%; overflow: hidden}
+
 nav
 {
   display: flex;
@@ -45,6 +47,7 @@ nav
   text-decoration: none;
   letter-spacing: 1px;
   font-size: 16px;
+  vertical-align: 60%;
 }
 
 .burger
