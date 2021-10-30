@@ -43,9 +43,43 @@ body::-webkit-scrollbar {
 .card
 {
   width: 500px;
-  height: 250px;
   margin: 0% 0% 0% 0%;
   position: relative;
+}
+
+.info
+{
+  width: 1000px;
+  margin: 0% 0% 0% 0%;
+  position: relative;
+}
+
+.info p
+{
+  text-align: left;
+  margin: 10px 30px;
+}
+
+.info table
+{
+  text-align: left;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th
+{
+  padding: 0 10px;
+}
+
+table, th, td {
+  border: 1px solid snow;
+  
+}
+
+.info h3
+{
+  font-style: italic;
 }
 
 .black
@@ -61,10 +95,10 @@ body::-webkit-scrollbar {
 
 .info
 {
-  position: absolute;
+  background-color: #1c1c1cd7;
   top: 0;
   right: 0;
-  height: 30%;
+  height: fit-content;
   padding: 10px 10px;
   width: 100%;
   color: snow;
