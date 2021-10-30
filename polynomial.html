@@ -41,20 +41,22 @@
             <div>
               <h3>Degree</h3>
               <p>The degree of a polynomial function is the highest exponent x is raised to in the polynomial’s monomial parts.</p>
-              <table>
-                  <tr>
-                      <th>Degree</th>
-                      <th>Polynomial</th>
-                  </tr>
-                  <tr>
-                    <th>4</th>
-                    <th>2x^4 + 3x</th>
-                  </tr>
-                  <tr>
-                    <th>3</th>
-                    <th>3x^2 - 2x^3</th>
-                  </tr>
-              </table>
+              <div style="margin: 0 30px">
+                <table>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Polynomial</th>
+                    </tr>
+                    <tr>
+                      <th>4</th>
+                      <th>2x^4 + 3x</th>
+                    </tr>
+                    <tr>
+                      <th>3</th>
+                      <th>3x^2 - 2x^3</th>
+                    </tr>
+                </table>
+              </div>
             </div>
         </div>
         <div class="info">
@@ -62,24 +64,42 @@
             <h3>Factoring</h3>
             <p>Factoring a polynomial is the process of breaking it down into irreducible factors, that is factors that cannot themselves be factored. For polynomial functions determining the values of x such that y = 0, gives the factors of the function.</p>
             <p style="margin-top: 30px;">Factoring can either be done through the use of a formula, such as the quadratic, quartic or quitic formula, although this becomes arbitrarily complex as the degree of the polynomial increases.</p>
-            <table>
-              <tr>
-                <th>Order</th>
-                <th>Root Formula</th>
-              </tr>
-              <tr>
-                <th>1 (Linear)</th>
-                <th>x = - (b / m)</th>
-              </tr>
-              <tr>
-                <th>2 (Quadratic)</th>
-                <th>x = (-b +- sqrt(b^2 - 4ac)) / 2a</th>
-              </tr>
-              <tr>
-                <th>3 (Cubic)</th>
-                <th>x = cbrt((-q / 2) +- sqrt((q2 / 4) + (p3 / 27))) - p / (3 * cbrt((-q / 2) +- sqrt((q^2 / 4) + (p3 / 27))))</th>
-              </tr>
-            </table>
+            <div style="margin: 0 30px">
+              <table>
+                <tr>
+                  <th>Order</th>
+                  <th>Root Formula</th>
+                </tr>
+                <tr>
+                  <th>1 (Linear)</th>
+                  <th>x = - (b / m)</th>
+                </tr>
+                <tr>
+                  <th>2 (Quadratic)</th>
+                  <th>x = (-b +- sqrt(b^2 - 4ac)) / 2a</th>
+                </tr>
+                <tr>
+                  <th>3 (Cubic)</th>
+                  <th>x = cbrt((-q / 2) +- sqrt((q2 / 4) + (p3 / 27))) - p / (3 * cbrt((-q / 2) +- sqrt((q^2 / 4) + (p3 / 27))))</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <div>
+            <h3>Newton's Method</h3>
+            <p>Because as the order of the polynomial increases, the computational viability of its corresponding root equation falls drastically, there are other methods of computing a function’s root. </p>
+            <p>The most effective amongst these is referred to as Newton’s Method or sometimes the Newton-Raphson Method. This method uses a series of successive approximations of x that generally become closer to a function's root x values, as the approximation number increases.</p>
+            <p>The approximations of x can be described as</p>
+            <div style="margin: 0 30px">
+              <table>
+                <tr>
+                  <th>x_1 = x_0 - (f(x_0) / f'(x_0))</th>
+                  <th>x_(n + 1) = x_n - (f(x_n) / f'(x_n))</th>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
     </div>
