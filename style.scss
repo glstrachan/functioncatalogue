@@ -8,6 +8,12 @@
 
 html, body {margin: 0; height: 100%; overflow-y: hidden}
 
+a:visited, a:link
+{
+  text-decoration: none;
+  color: snow;
+}
+
 body {
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
@@ -241,7 +247,3 @@ nav
       transform: rotate(360deg) scale(18) translateX(20px);
     }
   }
-
-  
-  
-  
